@@ -1,0 +1,12 @@
+#* text eol=crlf
+
+creategameprojects text
+createallprojects text
+
+vpc_linux binary
+vpc_osx binary
+
+*.exe binary
+*.lib binary
+protoc binary
+ccache binary
