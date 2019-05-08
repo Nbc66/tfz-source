@@ -37,6 +37,7 @@
 #include "tier0/vprof.h"
 #include "tf_bot_temp.h"
 #include "filesystem.h"
+#include "tier0/icommandline.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -113,7 +114,7 @@ const char *GetGameDescription()
 	if ( g_pGameRules ) // this function may be called before the world has spawned, and the game rules initialized
 		return g_pGameRules->GetGameDescription();
 	else
-		return "Team Fortress";
+		return "Team Fortress Zombies";
 }
 
 
@@ -179,11 +180,17 @@ void GameStartFrame( void )
 {
 	VPROF( "GameStartFrame" );
 
-	if ( g_pGameRules )
+	if (g_pGameRules)
+	{
+		//you might ask yourself what inhuman being would do such a thing well
+		//it was me
 		g_pGameRules->Think();
-
+		Msg("MY NAME JEFF\n");
+	}
 	if ( g_fGameOver )
 		return;
+	//also me
+	Msg("MY NAME JEFF\n");
 
 	gpGlobals->teamplay = teamplay.GetInt() ? true : false;
 

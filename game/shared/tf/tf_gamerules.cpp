@@ -4,6 +4,10 @@
 //
 // $NoKeywords: $
 //=============================================================================
+
+
+// I WAS PAID FUCKING 10$ JUST TO COMPILE THIS SHIT HAHAHAHAHAH
+
 #include "cbase.h"
 #include "tf_gamerules.h"
 #include "ammodef.h"
